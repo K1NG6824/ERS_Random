@@ -14,7 +14,7 @@ public Plugin myinfo =
     name = "[ERS] Random give skins",
     author = "K1NG",
     description = "http//projecttm.ru/",
-    version = "1.3"
+    version = "1.4"
 }
 
 public void OnPluginStart()
@@ -69,7 +69,7 @@ public void LoadConfig()
             idx = g_hArrayChanse.Length;
             g_hArrayChanse.Push(StringToInt(sIdSkin));
             g_hArrayChanse.Set(idx, g_iMaxChanse, 1);
-            if(iLen == 2 && StringToInt(sInfo[1]) > 0)
+            if(iLen == 2)
                 g_hArrayChanse.Set(idx, StringToInt(sInfo[1]), 2);
             else
                 g_hArrayChanse.Set(idx, -1, 2);
